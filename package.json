@@ -1,0 +1,20 @@
+{
+  "name": "levenshtein",
+  "version": "0.0.0",
+  "description": "Levenshtein algorithm CLI",
+  "license": "MIT",
+  "keywords": [
+    "Vladimir",
+    "Levenshtein",
+    "algorithm",
+    "edit",
+    "distance"
+    "bin",
+    "cli"
+  ],
+  "repo": "wooorm/levenshtein",
+  "dependencies": {
+    "wooorm/levenshtein.c": "*"
+  },
+  "install": "make install"
+}
