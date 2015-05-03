@@ -13,7 +13,7 @@ main(int argc, char **argv) {
 
     if (argc == 2) {
         if (!strcmp(a, "-v") || !strcmp(a, "--version")) {
-            printf("%s", "0.1.0\n");
+            printf("%s", "0.1.1\n");
 
             return 0;
         }
