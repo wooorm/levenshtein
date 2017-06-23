@@ -1,4 +1,4 @@
-# levenshtein([1](http://www.gsp.com/support/man/)) [![Build Status](https://img.shields.io/travis/wooorm/levenshtein.svg?style=flat)](https://travis-ci.org/wooorm/levenshtein)
+# levenshtein(1) [![Build Status](https://img.shields.io/travis/wooorm/levenshtein.svg?style=flat)](https://travis-ci.org/wooorm/levenshtein)
 
 Vladimir Levenshtein’s edit distance algorithm<sup>[1](http://en.wikipedia.org/wiki/Levenshtein_distance)</sup> as a UNIX command. There’s also a C library: [levenshtein(3)](https://github.com/wooorm/levenshtein.c), and a [JavaScript version](https://github.com/wooorm/levenshtein-edit-distance).
 
