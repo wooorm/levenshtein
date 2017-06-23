@@ -7,9 +7,9 @@ OBJ_SRC = $(SRC:.c=.o)
 CFLAGS = -D_GNU_SOURCE -std=c99 -I deps/levenshtein.c/
 
 LFLAGS = -Wall -Wno-format-y2k -W -Wstrict-prototypes \
-    -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch \
-    -Wshadow -Wcast-align -Wbad-function-cast -Wchar-subscripts -Winline \
-    -Wnested-externs -Wredundant-decls
+	-Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch \
+	-Wshadow -Wcast-align -Wbad-function-cast -Wchar-subscripts -Winline \
+	-Wnested-externs -Wredundant-decls
 
 levenshtein: $(OBJ_SRC)
 	$(CC) $(OBJ_SRC) -o $@
