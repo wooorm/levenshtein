@@ -1,6 +1,8 @@
-# levenshtein(1) [![Build Status](https://img.shields.io/travis/wooorm/levenshtein.svg?style=flat)](https://travis-ci.org/wooorm/levenshtein)
+# levenshtein(1) [![Build Status][badge]][status]
 
-Vladimir Levenshtein’s edit distance algorithm<sup>[1](http://en.wikipedia.org/wiki/Levenshtein_distance)</sup> as a UNIX command. There’s also a C library: [levenshtein(3)](https://github.com/wooorm/levenshtein.c), and a [JavaScript version](https://github.com/wooorm/levenshtein-edit-distance).
+Vladimir Levenshtein’s edit distance algorithm<sup>[1][wiki]</sup> as a UNIX
+command. There’s also a C library: [levenshtein(3)][lib], and a
+[JavaScript version][js].
 
 ## Installation
 
@@ -37,4 +39,18 @@ $ clib install wooorm/levenshtein
 
 ## License
 
-[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
+[MIT][] © [Titus Wormer][author]
+
+[badge]: https://img.shields.io/travis/wooorm/levenshtein.svg
+
+[status]: https://travis-ci.org/wooorm/levenshtein
+
+[wiki]: http://en.wikipedia.org/wiki/Levenshtein_distance
+
+[lib]: https://github.com/wooorm/levenshtein.c
+
+[js]: https://github.com/wooorm/levenshtein-edit-distance
+
+[mit]: LICENSE
+
+[author]: http://wooorm.com
