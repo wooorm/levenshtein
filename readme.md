@@ -49,7 +49,7 @@ $ clib install wooorm/levenshtein
 
 [lib]: https://github.com/wooorm/levenshtein.c
 
-[js]: https://github.com/wooorm/levenshtein-edit-distance
+[js]: https://github.com/words/levenshtein-edit-distance
 
 [mit]: LICENSE
 
