@@ -40,7 +40,7 @@ main(int argc, char **argv) {
     return 1;
   }
 
-  printf("%d\n", levenshtein(a, b));
+  printf("%zu\n", levenshtein(a, b));
 
   return 0;
 }

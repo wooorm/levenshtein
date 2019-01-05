@@ -1,28 +1,24 @@
-/* `levenshtein.c` - levenshtein
- * MIT licensed.
- * Copyright (c) 2015 Titus Wormer <tituswormer@gmail.com> */
+// `levenshtein.c` - levenshtein
+// MIT licensed.
+// Copyright (c) 2015 Titus Wormer <tituswormer@gmail.com>
 
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
 
-/* Returns an unsigned integer, depicting
- * the difference between `a` and `b`.
- * See http://en.wikipedia.org/wiki/Levenshtein_distance
- * for more information. */
-
-unsigned int
-levenshtein(const char *a, const char *b) {
-  unsigned int length = strlen(a);
-  unsigned int bLength = strlen(b);
-  unsigned int *cache = calloc(length, sizeof(unsigned int));
-  unsigned int index = 0;
-  unsigned int bIndex = 0;
-  unsigned int distance;
-  unsigned int bDistance;
-  unsigned int result;
+// Returns a size_t, depicting the difference between `a` and `b`.
+// See <http://en.wikipedia.org/wiki/Levenshtein_distance> for more information.
+size_t
+levenshtein_n(const char *a, const size_t length, const char *b, const size_t bLength) {
+  size_t *cache = calloc(length, sizeof(size_t));
+  size_t index = 0;
+  size_t bIndex = 0;
+  size_t distance;
+  size_t bDistance;
+  size_t result;
   char code;
 
-  /* Shortcut optimizations / degenerate cases. */
+  // Shortcut optimizations / degenerate cases.
   if (a == b) {
     return 0;
   }
@@ -35,17 +31,17 @@ levenshtein(const char *a, const char *b) {
     return length;
   }
 
-  /* initialize the vector. */
+  // initialize the vector.
   while (index < length) {
     cache[index] = index + 1;
     index++;
   }
 
-  /* Loop. */
+  // Loop.
   while (bIndex < bLength) {
     code = b[bIndex];
     result = distance = bIndex++;
-    index = -1;
+    index = SIZE_MAX;
 
     while (++index < length) {
       bDistance = code == a[index] ? distance : distance + 1;
@@ -64,4 +60,12 @@ levenshtein(const char *a, const char *b) {
   free(cache);
 
   return result;
+}
+
+size_t
+levenshtein(const char *a, const char *b) {
+  const size_t length = strlen(a);
+  const size_t bLength = strlen(b);
+
+  return levenshtein_n(a, length, b, bLength);
 }
