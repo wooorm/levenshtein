@@ -6,16 +6,16 @@ command. There’s also a C library: [levenshtein(3)][lib], and a
 
 ## Installation
 
-Git clone, and then:
-
-```bash
-$ make install
-```
-
-Or with CLib:
+With CLib:
 
 ```bash
 $ clib install wooorm/levenshtein
+```
+
+Or Git clone, and then:
+
+```bash
+$ make install
 ```
 
 ## Usage
