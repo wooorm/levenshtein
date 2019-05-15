@@ -2,7 +2,7 @@
 #include <string.h>
 #include "levenshtein.h"
 
-/* CLI. */
+// CLI.
 int
 main(int argc, char **argv) {
   char *a = argv[1];
