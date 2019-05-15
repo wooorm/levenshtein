@@ -45,7 +45,7 @@ $ make install
 
 [status]: https://travis-ci.org/wooorm/levenshtein
 
-[wiki]: http://en.wikipedia.org/wiki/Levenshtein_distance
+[wiki]: https://en.wikipedia.org/wiki/Levenshtein_distance
 
 [lib]: https://github.com/wooorm/levenshtein.c
 
@@ -53,4 +53,4 @@ $ make install
 
 [mit]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
