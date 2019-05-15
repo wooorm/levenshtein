@@ -1,4 +1,6 @@
-# levenshtein(1) [![Build Status][badge]][status]
+# levenshtein(1)
+
+[![Build][build-badge]][build]
 
 Vladimir Levenshtein’s edit distance algorithm<sup>[1][wiki]</sup> as a UNIX
 command. There’s also a C library: [levenshtein(3)][lib], and a
@@ -41,9 +43,9 @@ $ make install
 
 [MIT][] © [Titus Wormer][author]
 
-[badge]: https://img.shields.io/travis/wooorm/levenshtein.svg
+[build-badge]: https://img.shields.io/travis/wooorm/levenshtein.svg
 
-[status]: https://travis-ci.org/wooorm/levenshtein
+[build]: https://travis-ci.org/wooorm/levenshtein
 
 [wiki]: https://en.wikipedia.org/wiki/Levenshtein_distance
 
